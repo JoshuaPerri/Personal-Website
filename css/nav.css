@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+strong {
+  font: bold;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+
+  align-self: center;
+  justify-self: center;
+
+  width: calc(100% - 20px);
+
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+  color: lightgrey;
+  background-color: hsl(0, 0%, 30%);
+
+  width: calc(100% - 10px);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  color: white;
+  font-family: roboto;
+
+  user-select: none;
+
+  --windowWidth: 250px;
+
+  z-index: 10;
+}
+
+#nav-wrapper {
+  color: white;
+  font-family: roboto;
+
+  user-select: none;
+
+  --windowWidth: 250px;
+
+  z-index: 10;
+}
+
+#nav-window {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  width: var(--windowWidth);
+  height: 100%;
+
+  position: fixed;
+
+  z-index: inherit;
+
+  top: 0;
+
+  transition: all 0.5s ease;
+
+  left: calc(-1 * var(--windowWidth));
+}
+
+#nav-window.open {
+  left: 0px;
+}
+
+#nav-grow {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+
+  font-size: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  padding: 0;
+
+  z-index: inherit;
+
+  position: fixed;
+
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: calc(100% - 50px);
+  transition: all 0.5s ease;
+
+  left: 0px;
+}
+
+#nav-grow.open {
+  left: var(--windowWidth);
+}
+
+#nav-grow:hover {
+  cursor: pointer;
+}
+
+.nav-header {
+  margin: 10px;
+  font-size: 30px;
+}
