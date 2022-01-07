@@ -1,13 +1,3 @@
-document.getElementById("nav-grow").addEventListener("click", (e) => {
-  var navWindow = document.getElementById("nav-window");
-  var navGrow = document.getElementById("nav-grow");
-  if (!navWindow.classList.contains("open")) {
-    navWindow.classList.add("open");
-    navGrow.classList.add("open");
-    navGrow.textContent = "<";
-  } else {
-    navWindow.classList.remove("open");
-    navGrow.classList.remove("open");
-    navGrow.textContent = ">";
-  }
+$(".nav-link-menu").hover((e) => {
+  $(e.currentTarget).parent().find(".nav-link-list").toggleClass("closed");
 });

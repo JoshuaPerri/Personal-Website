@@ -7,17 +7,23 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <div id="nav-window">
-        <h3 class="nav-header">Navigation menu</h3>
-        <div class="nav-list">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="resume.html">Resume</a>
-          <a class="nav-link" href="coop-1.html">Co-op Work Term 1</a>
+    <nav id="nav-bar">
+      <a class="nav-link" href="index.html">
+        <img class="nav-img" src="img/home_white.svg" />
+        <p class="nav-text">Home</p>
+      </a>
+      <a class="nav-link" href="resume.html">
+        <img class="nav-img" src="img/resume_white.svg" />
+        <p class="nav-text">Resume</p>
+      </a>
+      <div class="nav-link-menu">
+        <button class="nav-link-expand">Co-op</button>
+        <div class="nav-link-list closed">
+          <a class="nav-link menu" href="coop-1.html">Work Term 1</a>
+          <a class="nav-link menu" href="#">Work Term 2</a>
+          <a class="nav-link menu" href="#">Work Term 3</a>
+          <a class="nav-link menu" href="#">Work Term 4</a>
         </div>
-      </div>
-      <div id="nav-grow" title="Navigation menu">
-        <strong>></strong>
       </div>
     </nav>
 
@@ -99,9 +105,7 @@
         </div>
       </div>
     </main>
-    <!-- <footer>
-      <img src="img/GitHub-Emblem.png" width="100" />
-    </footer> -->
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/nav.js"></script>
 </html>
