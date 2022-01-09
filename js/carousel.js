@@ -31,6 +31,9 @@ function updateJumpButtons(stage) {
 function updateCarouselItems(stage) {
   $(".carousel-item").removeClass("left").addClass("right clear");
 
+  $(".carousel-item").find(".goal-header").attr("tabindex", "-1");
+  $(".carousel-item").find(".goal-paragraph").attr("tabindex", "-1");
+
   var index;
   if (stage - 1 < 0) {
     index = $(".carousel-item").length - 1;
@@ -43,4 +46,12 @@ function updateCarouselItems(stage) {
     .addClass("left");
 
   $(".carousel-item:eq(" + stage + ")").removeClass("left right clear");
+
+  // Only make visible item focusable
+  $(".carousel-item:eq(" + stage + ")")
+    .find(".goal-header")
+    .attr("tabindex", "0");
+  $(".carousel-item:eq(" + stage + ")")
+    .find(".goal-paragraph")
+    .attr("tabindex", "0");
 }

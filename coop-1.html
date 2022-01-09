@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <title>Co-op 1</title>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -17,7 +18,9 @@
         <p class="nav-text">Resume</p>
       </a>
       <div class="nav-link-menu">
-        <button class="nav-link-expand">Co-op</button>
+        <div class="nav-link-expand" tabindex="0">
+          <p class="nav-link-expand-text">Co-op</p>
+        </div>
         <div class="nav-link-list closed">
           <a class="nav-link menu" href="coop-1.html">Work Term 1</a>
           <a class="nav-link menu" href="#">Work Term 2</a>
@@ -28,25 +31,78 @@
     </nav>
 
     <main>
-      <div class="company-container">
-        <div class="company-header-group">
-          <h1 class="company-header">
-            <strong>Co-op Work Term </strong>
+      <div class="section-container">
+        <div class="section-header-group">
+          <h1 class="section-header" tabindex="0">
+            <strong>Co-op Work Term</strong>
           </h1>
-          <span class="company-header-number"><strong>1</strong></span>
+          <span class="section-header-number"><strong>1</strong></span>
         </div>
-        <h2 class="company-subheader">
-          <strong> Keypath Education - Fall 2021</strong>
-        </h2>
-        <p class="company-text">
-          For my first co-op position, I worked as a frontend developer at
-          Keypath Education. Keypath is a company that develops interactive
-          elements for university courses. Basically, they develop anything more
-          complicated than simple text on a page that you might see in an online
-          university course. This can range from a click-to-reveal course
-          element, to a practice quiz to test a student's knowledge or even a
-          poll that returns that data to the faculty using a database.
-        </p>
+        <section class="section-text">
+          <p class="section-text-content" tabindex="0">
+            This page details what I have experienced during my first co-op work
+            term, which was in the Fall of 2021. It contains a description of
+            the company I worked for, the job I did, and the goals that I
+            achieved. I hope that you get a good idea of what I learned as a
+            result of my first co-op experience.
+          </p>
+        </section>
+        <section class="section-text">
+          <h2 class="section-subheader" tabindex="0">
+            <strong>Keypath Education</strong>
+          </h2>
+          <p class="section-text-content" tabindex="0">
+            Keypath Education is an education consulting, design and development
+            company. They partner with various universities across the world and
+            help them design their courses, and provide template or custom
+            interactive web elements to help improve the student experience.
+            These interactives can range from a practice quiz for students to
+            test their understanding, to a poll that returns the data to the
+            faculty to use in a lecture, to a scientific interactive diagram of
+            the human heart. Anything more complicated than text or an image is
+            likely to be handled by Keypath on one of their partnered sites.
+          </p>
+          <div class="section-image-container">
+            <a class="section-image-link" href="https://keypathedu.ca/">
+              <img
+                class="section-image"
+                alt="Keypath"
+                src="img/Keypath-Transparent.png"
+            /></a>
+          </div>
+        </section>
+        <section class="section-text">
+          <p class="section-text-content" tabindex="0">
+            At Keypath Education, I was a Front-end Developer. That means that I
+            was responsible for building interactives, as well as fixing bugs or
+            adding new features in preexisting interactive templates. Most of
+            the skills that were needed for this job were learned at work,
+            through some short training courses and gradual increases in the
+            difficulty of work, in order to facilitate improvement. A typical
+            interactive task would have me interacting with an Instructional
+            Designer to receive details on a requested interactive, and then
+            develop it for a few days until it’s near completion. That would be
+            followed by a period where the ID will test and make requests for
+            changes, which would be fulfilled until the ID is completely happy
+            with the product. It would then be their responsibility to implement
+            it into a course and present it to the university partner.
+          </p>
+        </section>
+        <hr />
+        <section class="section-text">
+          <h2 class="section-subheader" tabindex="0">
+            <strong>My Goals</strong>
+          </h2>
+          <p class="section-text-content" tabindex="0">
+            My goals range from the small to the large. For any one project, I
+            have the goal of improving my code from the last one. I ask
+            questions like “How can I reduce the DOM operations here?” or “Is
+            there any way to make this HTML more semantic?” and try my best to
+            comment wherever it makes sense. Below are my overarching goals for
+            this work term, a description of how I accomplished it, and a
+            reflection on what I think I can do to further it in the future.
+          </p>
+        </section>
       </div>
 
       <div class="carousel-container">
@@ -55,20 +111,24 @@
             <div class="goal-text">
               <div class="goal-header-group">
                 <div class="goal-number">1</div>
-                <h2 class="goal-header">Technical</h2>
+                <h2 class="goal-header" tabindex="0">Technical</h2>
               </div>
-              <p class="goal-paragraph">
-                When I had started at Keypath I knew that my technical abilities
-                would be tested. I hadn't had much experience in web
-                technologies up until that point, with just one website project
-                under my belt. Through working as a frontend developer, I gained
+              <p class="goal-paragraph" tabindex="0">
+                One of my major goals for this position was to improve my
+                technical abilities when it comes to web development. I hadn't
+                had much experience in web technologies up until the start of
+                this co-op, with just one academic website project under my
+                belt. Through working as a frontend developer, I gained
                 important knowledge in HTML5, CSS3, and vanilla JavaScript, as
                 well as JQuery. I also made a few interactive pieces that used a
                 database component in order to log comments and responses from
-                users. I feel like I got a good sampling of what skills are
-                required for a frontend developer position, having experienced
-                both the design and the functional side of making the front end
-                of a website.
+                users. I am now confident in my ability to use the basic web
+                technologies to create just about anything, however if there was
+                something that I’d still like to improve it would be to get more
+                comfortable using third party libraries to enhance my skills
+                further, such as Bootstrap, React, or Angular. This is so that I
+                can have more versatility in what I am able to work on, and
+                potentially use the best method to solve any problem.
               </p>
             </div>
             <div class="goal-image-container">
@@ -84,9 +144,11 @@
             <div class="goal-text">
               <div class="goal-header-group">
                 <div class="goal-number">2</div>
-                <h2 class="goal-header">Accessibility</h2>
+                <h2 class="goal-header" tabindex="-1">Accessibility</h2>
               </div>
-              <p class="goal-paragraph">
+              <p class="goal-paragraph" tabindex="-1">
+                The goal of improving my ability to create accessible websites
+                is one that developed midway through my work at Keypath.
                 Accessibility is an aspect of design that I never had to
                 consider up until starting this position in September 2021. As
                 Keypath is involved in education, it is imperative for all of
@@ -95,9 +157,12 @@
                 navigation, screen reader usage and colour contrast. I strived
                 to make all my pieces at least AA WCAG compliant, or AAA if
                 possible, which was always verified by my supervisors who were
-                experts when it comes to accessibility. If you have the means to
-                test accessibility compliance yourself, you can test this page,
-                which is keyboard navigable and screen reader ready.
+                experts when it comes to accessibility. Much like my goal about
+                my technical ability, I am confident that I can make most web
+                pages accessible, so long as they use just the standard web
+                technologies. This means that I would like to learn to use
+                accessibility libraries, or learn how to make websites built on
+                different frameworks accessible.
               </p>
             </div>
           </div>
@@ -107,16 +172,23 @@
             <div class="goal-text">
               <div class="goal-header-group">
                 <div class="goal-number">3</div>
-                <h2 class="goal-header">Workflow and Organization</h2>
+                <h2 class="goal-header" tabindex="-1">
+                  Workflow and Organization
+                </h2>
               </div>
-              <p class="goal-paragraph">
-                Throughout my time at Keypath, I had to use various Atlassian
-                work related softwares in order to track my time and stay
-                organized. This ranged from Jira to manage tasks, to Tempo which
-                helped track my time. This was also my first time using git in a
-                professional setting, as well as using it alongside other
-                people. I learned how to make and review pull requests, and
-                resolve merge conflicts when they came up.
+              <p class="goal-paragraph" tabindex="-1">
+                As this was my first co-op, as well as my first professional
+                experience writing code, I made it a goal to learn about how
+                developers are expected to organize themselves and work. At
+                Keypath I used various Atlassian work related softwares in order
+                to track my time and stay organized. This ranged from Jira to
+                manage tasks, to Tempo which helped track my time. This was also
+                my first time using git alongside other people. I learned how to
+                make and review pull requests, and resolve merge conflicts when
+                they came up. I now understand how to partake in an agile
+                workflow, and use business software to organize myself, which
+                should be abundantly helpful in coming work terms, and beyond
+                graduation.
               </p>
             </div>
             <div class="goal-image-container">
@@ -132,15 +204,17 @@
             <div class="goal-text">
               <div class="goal-header-group">
                 <div class="goal-number">4</div>
-                <h2 class="goal-header">Teamwork</h2>
+                <h2 class="goal-header" tabindex="-1">Teamwork</h2>
               </div>
-              <p class="goal-paragraph">
-                In all of my academic career up until this point, I hadn't once
-                had to collaborate with another person on code. However, as I
-                was a member of the development team at Keypath, collaboration
-                was impossible to avoid. I learned how to submit my own code in
-                the form of a pull request, as well as review other people's
-                pull requests. On top of that, regular meetings and code
+              <p class="goal-paragraph" tabindex="-1">
+                Another one of my major goals for this co-op position was to
+                familiarize myself with working alongside other developers. In
+                all of my academic career up until this point, I hadn't once had
+                to collaborate with another person on code. However, as I was a
+                member of the development team at Keypath, collaboration was
+                impossible to avoid. I learned how to submit my own code in the
+                form of a pull request, as well as review other people's pull
+                requests. On top of that, regular meetings and code
                 presentations ensured that I would constantly interact with
                 other team members, and have a chance to share my insight, as
                 well as receive recommendations from them.
@@ -149,21 +223,59 @@
           </div>
         </div>
         <div id="carousel-nav-bar" data-stage="0">
-          <button class="carousel-step-button prev" data-dir="-1"></button>
-          <button class="carousel-jump-button selected" data-jump="0"></button>
-          <button class="carousel-jump-button" data-jump="1"></button>
-          <button class="carousel-jump-button" data-jump="2"></button>
-          <button class="carousel-jump-button" data-jump="3"></button>
-          <button class="carousel-step-button next" data-dir="1"></button>
+          <button
+            class="carousel-step-button prev"
+            aria-label="Previous goal"
+            data-dir="-1"
+          ></button>
+          <button
+            class="carousel-jump-button selected"
+            aria-label="Jump to goal 1"
+            data-jump="0"
+          ></button>
+          <button
+            class="carousel-jump-button"
+            aria-label="Jump to goal 2"
+            data-jump="1"
+          ></button>
+          <button
+            class="carousel-jump-button"
+            aria-label="Jump to goal 3"
+            data-jump="2"
+          ></button>
+          <button
+            class="carousel-jump-button"
+            aria-label="Jump to goal 4"
+            data-jump="3"
+          ></button>
+          <button
+            class="carousel-step-button next"
+            aria-label="Next goal"
+            data-dir="1"
+          ></button>
         </div>
+      </div>
+
+      <div class="section-container">
+        <section class="section-text">
+          <p class="section-text-content" tabindex="0">
+            I hope that after reading this page that you can see how far I’ve
+            come since the beginning of this work term. Coming from a student
+            with no work experience, I have become someone with comprehensive
+            knowledge of both the technical aspects of web programming, and the
+            expectations of working in a professional coding environment. As
+            such, I believe that I have the capability to fit any front-end
+            developer position in the future.
+          </p>
+        </section>
       </div>
     </main>
     <footer>
       <a class="footer-link" href="https://github.com/JoshuaPerri">
-        <img src="img/github_logo.png" width="100" />
+        <img alt="github" src="img/github_logo.png" width="100" />
       </a>
       <a class="footer-link" href="https://www.linkedin.com/in/joshua-perri/">
-        <img src="img/LinkedIn_Logo.svg" width="130"
+        <img alt="linkedin" src="img/LinkedIn_Logo.svg" width="130"
       /></a>
     </footer>
   </body>

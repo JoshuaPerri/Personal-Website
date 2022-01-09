@@ -87,8 +87,15 @@ strong {
 
   height: 40px;
 
+  text-align: center;
+
   grid-row: 1/2;
   grid-column: 1/2;
+}
+
+.nav-link-expand-text {
+  padding: 10px 0 10px 0;
+  line-height: 1;
 }
 
 .nav-link-menu:hover {
